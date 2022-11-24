@@ -1,5 +1,13 @@
 function HomePage() {
-  return <div>Welcome to Next.js!</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default HomePage;
+
+const Header = () => {
+  return <div>Header</div>;
+};
