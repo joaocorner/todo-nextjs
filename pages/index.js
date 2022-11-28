@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { CSSReset } from "../src/components/CSSReset";
 
 function HomePage() {
   return (
     <div>
+      <CSSReset />
       <Header />
     </div>
   );
@@ -10,6 +12,8 @@ function HomePage() {
 
 export default HomePage;
 
+const StyledHeader = styled.div``;
+
 const Header = () => {
-  return <div>Header</div>;
+  return <StyledHeader>Header</StyledHeader>;
 };
