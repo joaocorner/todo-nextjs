@@ -21,8 +21,50 @@ const StyledHeader = styled.div`
   align-items: center;
   padding: 0 20px;
   font-size: 1.5rem;
+  justify-content: space-between;
+
+  a {
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 350px;
+  }
+  @media (max-width: 650px) {
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+    ul {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
 `;
 
 const Header = () => {
-  return <StyledHeader>ToDo List</StyledHeader>;
+  return (
+    <StyledHeader>
+      <h1>
+        <a href="#">ToDo List</a>{" "}
+      </h1>
+      <ul>
+        <li>
+          <a href="#">New Task</a>
+        </li>
+        <li>
+          <a href="#">Columns</a>
+        </li>
+        <li>
+          <a href="#">Tag</a>
+        </li>
+      </ul>
+    </StyledHeader>
+  );
 };
