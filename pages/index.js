@@ -6,6 +6,7 @@ function HomePage() {
     <div>
       <CSSReset />
       <Header />
+      <Main />
     </div>
   );
 }
@@ -66,5 +67,31 @@ const Header = () => {
         </li>
       </ul>
     </StyledHeader>
+  );
+};
+
+const StyledMain = styled.main`
+  background-color: #9d9d9d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 0 20px;
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+`;
+
+const Main = () => {
+  return (
+    <StyledMain>
+      <h1>ToDo List</h1>
+      <p>Let's get some work done!</p>
+    </StyledMain>
   );
 };
