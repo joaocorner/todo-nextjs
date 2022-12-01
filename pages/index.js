@@ -39,7 +39,7 @@ const StyledHeader = styled.div`
   }
   @media (max-width: 650px) {
     flex-direction: column;
-    height: 200px;
+    height: 120px;
     justify-content: space-around;
     ul {
       width: 100%;
